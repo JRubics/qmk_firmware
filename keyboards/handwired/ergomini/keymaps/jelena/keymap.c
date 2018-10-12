@@ -111,7 +111,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 	if (record->event.pressed) {
 		switch(keycode) {
 			case M_PASS:
-				SEND_STRING("password0");
+				SEND_STRING("password");
 				return false;
 			case M_PWD:
 				SEND_STRING("password1");
